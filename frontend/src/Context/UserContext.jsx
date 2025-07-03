@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const userDataContext = createContext();
 function UserContext({ children }) {
-  let serverUrl = "http://localhost:7000";
+  let serverUrl = "https://airbnb-backend-z8ns.onrender.com";
   let [getuserData, setUserData] = useState(null);
 
   const getUserData = async () => {
